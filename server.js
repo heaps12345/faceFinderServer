@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
-require('dotenv').config()
+require('dotenv').config();
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send(database.users);
+  res.send('It is working');
 });
 
 app.post('/signin', (req, res) => {
