@@ -57,9 +57,9 @@ app.post('/imageurl', (req, res) => {
   image.handleApiCall(req, res);
 });
 
-app.get('/leaderboard', (req, res) => {
-  leaderboard.getLeaderboard(req, res, db);
-});
+// app.get('/leaderboard', (req, res) => {
+//   leaderboard.getLeaderboard(req, res, db);
+// });
 
 const PORT = process.env.PORT || 5000;
 
